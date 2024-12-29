@@ -3,59 +3,81 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 const categories = [
   {
-    name: 'Recent',
+    name: 'Amazon',
+    jobtitle: 'Software Development Engineer',
+    duration: 'JUL 2022 - PRESENT',
     posts: [
       {
         id: 1,
-        title: 'Does drinking coffee make you smarter?',
-        date: '5h ago',
-        commentCount: 5,
-        shareCount: 2,
+        description: "Led development of end-to-end region build automation across Route 53 (AWS's DNS web service). This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
       },
       {
         id: 2,
-        title: "So you've bought coffee... now what?",
-        date: '2h ago',
-        commentCount: 3,
-        shareCount: 2,
+        description: "Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers.",
       },
     ],
   },
   {
-    name: 'Popular',
+    name: 'Wattpad',
+    jobtitle: 'Associate Engineer',
+    duration: 'MAY 2020 - APR 2021',
     posts: [
       {
         id: 1,
-        title: 'Is tech making coffee better or worse?',
-        date: 'Jan 7',
-        commentCount: 29,
-        shareCount: 16,
+        description: "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
       },
       {
         id: 2,
-        title: 'The most innovative things happening in coffee',
-        date: 'Mar 19',
-        commentCount: 24,
-        shareCount: 12,
+        description: "Iteratively built web experiences for 80 million users across high-traffic pages.",
+      },
+      {
+        id: 3,
+        description: "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
       },
     ],
   },
   {
-    name: 'Trending',
+    name: 'University of Toronto',
+    jobtitle: 'Research Engineer',
+    duration: 'MAY 2021 - SEPT 2021',
     posts: [
       {
         id: 1,
-        title: 'Ask Me Anything: 10 answers to your questions about coffee',
-        date: '2d ago',
-        commentCount: 9,
-        shareCount: 5,
+        description: "Developed and researched an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
       },
       {
         id: 2,
-        title: "The worst advice we've ever heard about coffee",
-        date: '4d ago',
-        commentCount: 1,
-        shareCount: 2,
+        description: "Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik.",
+      },
+    ],
+  },
+  {
+    name: 'Centivizer',
+    jobtitle: 'Software Developer',
+    duration: 'SEPT 2019 - APR 2020',
+    posts: [
+      {
+        id: 1,
+        description: "Developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
+      },
+      {
+        id: 2,
+        description: "Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia.",
+      },
+    ],
+  },
+  {
+    name: 'Orange Gate',
+    jobtitle: 'Software Developer Intern',
+    duration: 'MAY 2019 - AUG 2019',
+    posts: [
+      {
+        id: 1,
+        description: "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sensors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
+      },
+      {
+        id: 2,
+        description: "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
       },
     ],
   },
@@ -65,41 +87,42 @@ const Experience = () => {
   return (
     <div id="experience" className="bg-gray-800">
       <div className="container mx-auto max-w-screen-lg min-h-screen">
-      <TabGroup>
-          <TabList className="flex gap-4">
-            {categories.map(({ name }) => (
-              <Tab
-                key={name}
-                className="rounded-full py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white"
-              >
-                {name}
-              </Tab>
-            ))}
-          </TabList>
-          <TabPanels className="mt-3">
-            {categories.map(({ name, posts }) => (
-              <TabPanel key={name} className="rounded-xl bg-white/5 p-3">
-                <ul>
-                  {posts.map((post) => (
-                    <li key={post.id} className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5">
-                      <a href="#" className="font-semibold text-white">
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </a>
-                      <ul className="flex gap-2 text-white/50" aria-hidden="true">
-                        <li>{post.date}</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.commentCount} comments</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.shareCount} shares</li>
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
-              </TabPanel>
-            ))}
-          </TabPanels>
-        </TabGroup>  
+        
+        <div className="section-header">
+          <span className="section-title">/ experience</span>
+        </div>
+
+        <div className="">
+          <TabGroup vertical>
+            <TabList className="float-left h-80">
+              {categories.map(({ name }) => (
+                <Tab
+                  key={name}
+                  className="py-3 px-3 text-white hover:text-cyan-300 block text-left focus:text-cyan-300 outline-none uppercase">
+                  {name}
+                </Tab>
+              ))}
+            </TabList>
+            <TabPanels className="w-auto ml-52 h-80 text-white pl-12">
+              {categories.map(({ name, jobtitle, duration, posts }) => (
+                <TabPanel key={name}>
+                  <p className="text-2xl font-bold">{jobtitle} <span className="text-cyan-300">@ {name}</span></p>
+                  <p className="text-base">{duration}</p>
+                  <ul>
+                    {posts.map((post) => (
+                      <li key={post.id} className="relative p-3 job-description">
+                        <ul className="flex gap-2" aria-hidden="true">
+                          <li className="pl-4 text-base">{post.description}</li>
+                        </ul>
+                      </li>
+                    ))}
+                  </ul>
+                </TabPanel>
+              ))}
+            </TabPanels>
+          </TabGroup>
+        </div>
+
       </div>
     </div>
   )

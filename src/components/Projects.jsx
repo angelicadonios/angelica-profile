@@ -1,10 +1,95 @@
 import React from 'react'
+import angel from "../assets/images/angel04.png";
+import one from "../assets/images/1proj.png"
+
+const product = {
+  name: 'Basic Tee 6-Pack',
+  price: '$192',
+  href: '#',
+  breadcrumbs: [
+    { id: 1, name: 'Men', href: '#' },
+    { id: 2, name: 'Clothing', href: '#' },
+  ],
+  images: [
+    {
+      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+      alt: 'Two each of gray, white, and black shirts laying flat.',
+    },
+    {
+      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
+      alt: 'Model wearing plain black basic tee.',
+    },
+    {
+      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
+      alt: 'Model wearing plain gray basic tee.',
+    },
+    {
+      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+      alt: 'Model wearing plain white basic tee.',
+    },
+  ],
+  colors: [
+    { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
+    { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
+    { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
+  ],
+  sizes: [
+    { name: 'XXS', inStock: false },
+    { name: 'XS', inStock: true },
+    { name: 'S', inStock: true },
+    { name: 'M', inStock: true },
+    { name: 'L', inStock: true },
+    { name: 'XL', inStock: true },
+    { name: '2XL', inStock: true },
+    { name: '3XL', inStock: true },
+  ],
+  description:
+    'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
+  highlights: [
+    'Hand cut and sewn locally',
+    'Dyed with our proprietary colors',
+    'Pre-washed & pre-shrunk',
+    'Ultra-soft 100% cotton',
+  ],
+  details:
+    'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
+}
 
 const Projects = () => {
   return (
-    <div className="flex flex-row min-h-screen justify-center items-center">
-      <div>
-        Projects
+    <div id="projects" className="bg-gray-800">
+      <div className="container mx-auto max-w-screen-lg min-h-screen">
+
+        <div className="section-header">
+          <span className="section-title">/ projects</span>
+        </div>
+
+        {/* Image gallery */}
+        <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+          <img
+          alt={product.images[0].alt}
+          src={product.images[0].src}
+          className="size-full rounded-lg object-cover lg:block"
+          />
+        <div className="lg:grid lg:grid-cols-1 lg:gap-y-8">
+          <img
+          alt={product.images[1].alt}
+          src={product.images[1].src}
+          className="aspect-[3/2] w-full rounded-lg object-cover"
+          />
+          <img
+          alt={product.images[2].alt}
+          src={product.images[2].src}
+          className="aspect-[3/2] w-full rounded-lg object-cover"
+          />
+        </div>
+          <img
+          alt={product.images[3].alt}
+          src={product.images[3].src}
+          className="aspect-[4/5] size-full object-cover sm:rounded-lg lg:aspect-auto"
+          />
+        </div>
+
       </div>
     </div>
   )

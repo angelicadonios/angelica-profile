@@ -69,3 +69,10 @@
     position: absolute;
     left: 0;
   }
+
+  .job-description li::before {
+    content: "▹    ";
+    color: pink;
+    position: absolute;
+    left: 0;
+  }
