@@ -85,8 +85,8 @@ const categories = [
 
 const Experience = () => {
   return (
-    <div id="experience" className="bg-gray-800">
-      <div className="container mx-auto max-w-screen-lg min-h-screen">
+    <div id="experience" className="bg-slate-900">
+      <div className="container mx-auto max-w-screen-lg min-h-full pt-28">
         
         <div className="section-header">
           <span className="section-title">/ experience</span>
@@ -94,7 +94,7 @@ const Experience = () => {
 
         <div className="">
           <TabGroup vertical>
-            <TabList className="float-left h-80">
+            <TabList className="float-left h-full">
               {categories.map(({ name }) => (
                 <Tab
                   key={name}
@@ -103,16 +103,16 @@ const Experience = () => {
                 </Tab>
               ))}
             </TabList>
-            <TabPanels className="w-auto ml-52 h-80 text-white pl-12">
+            <TabPanels className="w-auto ml-52 h-full text-white pl-12">
               {categories.map(({ name, jobtitle, duration, posts }) => (
                 <TabPanel key={name}>
                   <p className="text-2xl font-bold">{jobtitle} <span className="text-cyan-300">@ {name}</span></p>
                   <p className="text-base">{duration}</p>
-                  <ul>
+                  <ul className="pt-7">
                     {posts.map((post) => (
                       <li key={post.id} className="relative p-3 job-description">
                         <ul className="flex gap-2" aria-hidden="true">
-                          <li className="pl-4 text-base">{post.description}</li>
+                          <li className="pl-7 pb-1 text-base">{post.description}</li>
                         </ul>
                       </li>
                     ))}

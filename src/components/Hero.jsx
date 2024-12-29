@@ -3,7 +3,7 @@ import { ChatBubbleLeftEllipsisIcon } from '@heroicons/react/24/outline'
 
 const Hero = () => {
   return (
-    <div id="home" className="bg-gray-800">
+    <div id="home" className="bg-slate-900">
       <div className="container mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
           <h1 className="typed-out text-balance text-5xl tracking-tight text-gray-100 sm:text-7xl">
