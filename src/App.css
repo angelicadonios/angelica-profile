@@ -42,7 +42,7 @@
   .section-title {
     font-size: 46px;
     font-weight: 700;
-    color: aliceblue;
+    color: #cbd5e1;
   }
 
   .about-description ul {
@@ -56,7 +56,7 @@
     position: relative;
     padding-left: 20px;
     font-size: 17px;
-    color: white;
+    color: #94a3b8;
   }
   
   .about-description li::before {
@@ -81,4 +81,3 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
-  

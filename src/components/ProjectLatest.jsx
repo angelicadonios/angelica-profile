@@ -16,7 +16,7 @@ const ProjectLatest = () => {
         <div>
             <p className="text-pink-300 tracking-widest">LATEST PROJECT</p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-300 sm:text-4xl">Technical Specifications</h2>
-            <p className="mt-4 text-slate-500">
+            <p className="mt-4 text-slate-400">
                 The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
                 steel divider separates active cards from new ones, or can be used to archive important task lists.
             </p>
@@ -25,7 +25,7 @@ const ProjectLatest = () => {
                 {features.map((feature) => (
                   <div key={feature.name} className="border-t border-gray-200 pt-4">
                     <dt className="font-medium text-slate-300">{feature.name}</dt>
-                    <dd className="mt-2 text-sm text-slate-500">{feature.description}</dd>
+                    <dd className="mt-2 text-sm text-slate-400">{feature.description}</dd>
                   </div>
                 ))}
             </dl>

@@ -6,10 +6,10 @@ const Hero = () => {
     <div id="home" className="bg-slate-900">
       <div className="container mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
-          <h1 className="typed-out text-balance text-5xl tracking-tight text-gray-100 sm:text-7xl">
+          <h1 className="typed-out text-balance text-5xl tracking-tight text-slate-300 sm:text-7xl">
             hi, angel here.
           </h1>
-          <p className="mt-8 text-pretty text-lg font-medium text-gray-100 sm:text-xl/8">
+          <p className="mt-8 text-pretty text-lg font-medium text-slate-400 sm:text-xl/8">
             I'm a software developer from Manila, Philippines. I'm fascinated by scalable, high-impact solutions and have contributed to key feature launches in top-tier platforms used by thousands of users worldwide.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
