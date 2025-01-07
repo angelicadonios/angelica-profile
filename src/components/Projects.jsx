@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectCards from './ProjectCards';
-import ProjectLatest from './ProjectLatest';
 
 const Projects = () => {
   return (
@@ -11,8 +10,7 @@ const Projects = () => {
           <span className="section-title">/ projects</span>
         </div>
 
-        {/* latest project */}
-        <ProjectLatest />
+        
         
         {/* cards */}
         <ProjectCards />
