@@ -48,11 +48,9 @@ const callouts = [
 
 const ProjectCards = () => {
   return (  
-    <div className="">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
         <div className="mx-auto max-w-2xl py-4 sm:py-4 lg:max-w-none lg:py-4">
-          
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-3 lg:space-y-4">
+          <div className="grid grid-flow-row auto-rows-fr gap-4	grid-cols-3">
             {callouts.map((callout) => (
               <div key={callout.name} className="group relative">
                 {/* start card */}
@@ -92,7 +90,6 @@ const ProjectCards = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
