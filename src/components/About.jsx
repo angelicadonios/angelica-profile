@@ -1,5 +1,5 @@
 import React from 'react'
-import angel from "../assets/images/angel04.png";
+import angel from "../assets/images/angel03.jpg";
 
 const tech_stack = [
   "HTML5",

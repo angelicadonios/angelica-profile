@@ -13,7 +13,7 @@ const Hero = () => {
             I'm a software developer from Manila, Philippines. I'm fascinated by scalable, high-impact solutions and have contributed to key feature launches in top-tier platforms used by thousands of users worldwide.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a href="mailto:angelicadonios@gmail.com" className="flex rounded-md border-2 border-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <a href="mailto:angelicadonios@gmail.com" className="say-hi flex rounded-md border-2 px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
             <ChatBubbleLeftEllipsisIcon aria-hidden="true" className="size-6" />
             <span className="px-2">Say hi!</span>
             </a>

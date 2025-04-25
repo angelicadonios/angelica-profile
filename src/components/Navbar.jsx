@@ -55,18 +55,18 @@ const Navbar = () => {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <a href="mailto:angelicadonios@gmail.com" target="_blank" className="relative bg-gray-800 p-1 text-gray-400 hover:text-white">
+            <a href="mailto:angelicadonios@gmail.com" target="_blank" className="relative bg-slate-900 p-1 text-gray-400 hover:text-white">
               <EnvelopeIcon aria-hidden="true" className="size-5" />
             </a>
-            <a href="https://www.linkedin.com/in/angelica-donios/" target="_blank" className="relative bg-gray-800 p-1 text-gray-400 hover:text-white">
+            <a href="https://www.linkedin.com/in/angelica-donios/" target="_blank" className="relative bg-slate-900 p-1 text-gray-400 hover:text-white">
               <AtSymbolIcon aria-hidden="true" className="size-5" />
             </a>
-            <a href="https://github.com/angelicadonios" target="_blank" className="relative bg-gray-800 p-1 text-gray-400 hover:text-white">
+            <a href="https://github.com/angelicadonios" target="_blank" className="relative bg-slate-900 p-1 text-gray-400 hover:text-white">
               <CodeBracketIcon aria-hidden="true" className="size-5" />
             </a>
-            <a href="https://medium.com/@snowiangel" target="_blank" className="relative bg-gray-800 p-1 text-gray-400 hover:text-white">
+            {/* <a href="https://medium.com/@snowiangel" target="_blank" className="relative bg-slate-900 p-1 text-gray-400 hover:text-white">
               <PencilSquareIcon aria-hidden="true" className="size-5" />
-            </a>
+            </a> */}
             
           </div>
         </div>

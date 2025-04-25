@@ -8,7 +8,7 @@
 /* hero */
 .typed-out {
     overflow: hidden;
-    border-right: 4px solid #64ffda;
+    border-right: 4px solid #fad2d2;
     white-space: nowrap;
     animation: typing 2s steps(20, end) forwards, blinking 1s infinite;
     height: 76px;
@@ -21,7 +21,7 @@
   }
   @keyframes blinking {
     from { border-color: transparent }
-    to { border-color: #64ffda; }
+    to { border-color: #fad2d2; }
   }
 
   .section-header {
@@ -36,7 +36,7 @@
     margin-top: 39px;
     height: 1px;
     margin-left: 20px;
-    background-color: pink;
+    background-color: #fad2d2;
   }
   
   .section-title {
@@ -61,14 +61,14 @@
   
   .about-description li::before {
     content: "▹    ";
-    color: cyan;
+    color: #fad2d2;
     position: absolute;
     left: 0;
   }
 
   .job-description li::before {
     content: "▹    ";
-    color: pink;
+    color: #fad2d2;
     position: absolute;
     left: 0;
   }
@@ -80,4 +80,37 @@
   #credits {
     padding-top: 100px;
     padding-bottom: 50px;
+  }
+
+  .exp-highlight {
+    color: #fad2d2;
+  }
+
+  .tab-highlight {
+    color: #cbd5e1;
+  }
+
+  .tab-highlight:hover {
+    color: #fad2d2;
+  }
+
+  .tab-highlight:focus {
+    color: #fad2d2;
+  }
+
+  .say-hi {
+    color: #fad2d2;
+    border-color: #fad2d2;
+  }
+
+  .say-hi:hover {
+    background-color: #112240;
+  }
+
+  .fold-icon {
+    color: #fad2d2;
+  }
+
+  .proj-name {
+    color: #cbd5e1;
   }
