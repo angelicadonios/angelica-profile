@@ -3,25 +3,36 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 const categories = [
   {
+    name: 'Freelance',
+    jobtitle: 'Web Developer',
+    duration: 'AUG 2023 - MAR 2025',
+    posts: [
+      {
+        id: 1,
+        description: "Developed dynamic and responsive websites utilizing Tailwind CSS, JavaScript, React.js, Node.js.",
+      },
+      {
+        id: 2,
+        description: "Effectively managed my workloads while maintaining clear and professional communication with clients.",
+      },
+    ],
+  },
+  {
     name: 'TBS Global',
     jobtitle: 'Software Developer',
     duration: 'OCT 2021 - JUL 2023',
     posts: [
       {
         id: 1,
-        description: "I developed a Calendar System using Laravel, utilizing its powerful routing, authentication, and Eloquent ORM features for seamless functionality.",
+        description: "Developed a calendar system with Laravel to streamline the management and organization of tax filings for accountants.",
       },
       {
         id: 2,
-        description: "I handled the redevelopment of a WordPress website, implementing custom themes, plugins, and continuous updates to ensure optimal performance and security.",
+        description: "Led WordPress website redevelopment and ensured continuous updates for improved functionality and performance.",
       },
       {
         id: 3,
-        description: "I developed an Onboarding System using the MERN stack, leveraging MongoDB for data storage, Express for server-side handling, ReactJS for the front-end interface, and Node.js for backend logic and API integration.",
-      },
-      {
-        id: 4,
-        description: "I built a Customer Relationship Management (CRM) system using the MERN stack, utilizing MongoDB for efficient data storage, Express for building robust APIs, ReactJS for creating an interactive user interface, and Node.js for handling server-side operations and real-time data processing.",
+        description: "Developed an onboarding system using the MERN stack to optimize user integration and management.",
       },
     ],
   },
@@ -32,19 +43,15 @@ const categories = [
     posts: [
       {
         id: 1,
-        description: "I converted PSD files into HTML code to ensure a seamless transition from design to web development.",
+        description: "Converted PSD design files into HTML code, ensuring accurate translation of visual elements into functional web pages.",
       },
       {
         id: 2,
-        description: "I uploaded and optimized articles on five Joomla websites, enhancing content management and improving SEO performance.",
+        description: "Published articles across five Joomla websites, maintaining content accuracy and consistency.",
       },
       {
         id: 3,
-        description: "I monitored and maintained the performance of Joomla websites, ensuring uptime, security, and smooth content updates as required.",
-      },
-      {
-        id: 4,
-        description: "I provided technical support to team members, troubleshooting hardware and software issues, ensuring network connectivity, and assisting with system configurations.",
+        description: "Consistently analyzed data and report design, presenting results and findings to internal business stakeholders.",
       },
     ],
   },
@@ -55,26 +62,22 @@ const categories = [
     posts: [
       {
         id: 1,
-        description: "I developed GetBook, a dynamic e-commerce platform that leverages web technologies to provide users with a vast digital catalog of books, available for purchase through two secure payment gateways.",
+        description: "Developed GetBook, a dynamic e-commerce platform that leverages web technologies to provide users with a vast digital catalog of books, available for purchase through two secure payment gateways.",
       },
       {
         id: 2,
-        description: "I built The Collab, a co-working space-inspired website where users can select a type of room and easily book it.",
+        description: "Built The Collab, a co-working space-inspired website where users can select a type of room and easily book it.",
       },
     ],
   },
   {
-    name: 'PLDT, Inc.',
-    jobtitle: 'Student Trainee',
-    duration: 'SUMMER 2017',
+    name: 'University of the East',
+    jobtitle: 'Student',
+    duration: 'JUNE 2014 - APR 2018',
     posts: [
       {
         id: 1,
-        description: "I handled the Main Distribution Frame (MDF) to ensure proper connectivity and functionality of network systems.",
-      },
-      {
-        id: 2,
-        description: "I handled, maintained, and made changes to databases to ensure their accuracy, security, and optimal performance.",
+        description: "Designed, developed, and conducted user-centered research on an interactive children's game utilizing Unity, incorporating principles of engagement design, UX/UI optimization, and pixel art style development.",
       },
     ],
   },
