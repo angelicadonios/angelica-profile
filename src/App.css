@@ -8,7 +8,7 @@
 /* hero */
 .typed-out {
     overflow: hidden;
-    border-right: 4px solid #fad2d2;
+    border-right: 4px solid #add9cc;
     white-space: nowrap;
     animation: typing 2s steps(20, end) forwards, blinking 1s infinite;
     height: 76px;
@@ -21,7 +21,7 @@
   }
   @keyframes blinking {
     from { border-color: transparent }
-    to { border-color: #fad2d2; }
+    to { border-color: #add9cc; }
   }
 
   .section-header {
@@ -36,7 +36,7 @@
     margin-top: 39px;
     height: 1px;
     margin-left: 20px;
-    background-color: #fad2d2;
+    background-color: #add9cc;
   }
   
   .section-title {
@@ -61,14 +61,14 @@
   
   .about-description li::before {
     content: "▹    ";
-    color: #fad2d2;
+    color: #add9cc;
     position: absolute;
     left: 0;
   }
 
   .job-description li::before {
     content: "▹    ";
-    color: #fad2d2;
+    color: #add9cc;
     position: absolute;
     left: 0;
   }
@@ -83,24 +83,24 @@
   }
 
   .exp-highlight {
-    color: #fad2d2;
+    color: #add9cc;
   }
 
   .tab-highlight {
-    color: #cbd5e1;
+    color: #94a3b8;
   }
 
   .tab-highlight:hover {
-    color: #fad2d2;
+    color: #add9cc;
   }
 
   .tab-highlight:focus {
-    color: #fad2d2;
+    color: #add9cc;
   }
 
   .say-hi {
-    color: #fad2d2;
-    border-color: #fad2d2;
+    color: #add9cc;
+    border-color: #add9cc;
   }
 
   .say-hi:hover {
@@ -108,9 +108,13 @@
   }
 
   .fold-icon {
-    color: #fad2d2;
+    color: #add9cc;
   }
 
   .proj-name {
     color: #cbd5e1;
+  }
+
+  .nav-highlight:hover {
+    color: #add9cc;
   }
