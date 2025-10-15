@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'grafies';
-  src: url('src/assets/grafies.otf');
+  src: url('/grafies.otf');
   font-weight: normal;
   font-style: normal;
 }
