@@ -5,69 +5,83 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'grafies';
+  src: url('src/assets/grafies.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* hero */
-.typed-out {
-    overflow: hidden;
-    border-right: 4px solid #add9cc;
-    white-space: nowrap;
-    animation: typing 2s steps(20, end) forwards, blinking 1s infinite;
-    height: 76px;
-    border-radius: 1px;
-    margin: 0 auto;
-  }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 66% }
-  }
-  @keyframes blinking {
-    from { border-color: transparent }
-    to { border-color: #add9cc; }
-  }
 
-  .section-header {
-    display: flex;
-    padding-bottom: 42px;
-  }
+/* title */
+.section-header {
+  display: flex;
+  padding-bottom: 42px;
+}
 
-  .section-header::after {
-    content: "";
-    display: block;
-    width: 300px;
-    margin-top: 39px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: #add9cc;
-  }
-  
-  .section-title {
-    font-size: 46px;
-    font-weight: 700;
-    color: #cbd5e1;
-  }
+.section-title {
+  font-family: 'grafies', serif;
+  font-size: 56px;
+  color: #cbd5e1;
+}
 
-  .about-description ul {
-    padding-top: 20px;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 10px));
-  }
+/* about */
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-left {
+  flex: 70%;
+}
+
+.about-right {
+  flex: 30%;
+  padding-left: 40px;
+}
+
+.about-right img {
+  width: auto;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+
+.about-right img:hover {
+  transform: translateY(-7px);
+}
+
+.about-left li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 17px;
+}
   
-  .about-description li {
-    position: relative;
-    padding-left: 20px;
-    font-size: 17px;
-    color: #94a3b8;
-  }
-  
-  .about-description li::before {
-    content: "▹    ";
-    color: #add9cc;
-    position: absolute;
-    left: 0;
-  }
+.about-left li::before {
+  content: "▹  ";
+  color: #add9cc;
+  position: absolute;
+  left: 0;
+}
+
+.about-stack ul {
+  padding-top: 20px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+
+.arched-image {
+  border-top-left-radius: 50% 150px; /* Adjust values for desired curve */
+  border-top-right-radius: 50% 150px;
+  /* Or for a bottom arch: */
+  /* border-bottom-left-radius: 50% 100px; */
+  /* border-bottom-right-radius: 50% 100px; */
+  overflow: hidden; /* Important to hide parts outside the curve */
+}
 
   .job-description li::before {
-    content: "▹    ";
+    content: "▹  ";
     color: #add9cc;
     position: absolute;
     left: 0;
@@ -111,10 +125,90 @@
     color: #add9cc;
   }
 
-  .proj-name {
+  .project-name {
     color: #cbd5e1;
   }
 
   .nav-highlight:hover {
     color: #add9cc;
   }
+
+  /* cards */
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 40px 0;
+  }
+
+  .cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 60px;
+  }
+
+  .card {
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 40px;
+  }
+
+  .card:hover {
+    transform: translateY(-7px);
+  }
+
+  .card-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50% 150px; /* Adjust values for desired curve */
+    border-top-right-radius: 50% 150px;
+  }
+
+  .card-content {
+    padding-top: 20px;
+    display: flex;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .about-right {
+    display: none; /* Hide the div on mobile */
+  }
+
+  .about-description p {
+    font-size: 16px;
+  }
+
+  .about-description li {
+    font-size: 16px;
+  }
+
+  .card-container {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+    padding-bottom: 20px;
+  }
+
+  .education-content {
+    flex-direction: column;
+  }
+}
+

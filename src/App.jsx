@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Credits from './components/Credits'
+import Credits from './components/Credits';
 
 const App = () => {
   return (

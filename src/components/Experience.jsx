@@ -18,7 +18,7 @@ const categories = [
     ],
   },
   {
-    name: 'TBS Global',
+    name: 'TBS',
     jobtitle: 'Software Developer',
     duration: 'OCT 2021 - JUL 2023',
     posts: [
@@ -71,6 +71,21 @@ const categories = [
     ],
   },
   {
+    name: 'PLDT, Inc.',
+    jobtitle: 'Trainee',
+    duration: 'MAR 2017 - MAY 2017',
+    posts: [
+      {
+        id: 1,
+        description: "Handled the configuration, monitoring, and maintenance of the Main Distribution Frame (MDF).",
+      },
+      {
+        id: 2,
+        description: "Performed database operations such as updates, backups, and issue resolution.",
+      },
+    ],
+  },
+  {
     name: 'University of the East',
     jobtitle: 'Student',
     duration: 'JUNE 2014 - APR 2018',
@@ -85,25 +100,24 @@ const categories = [
 
 const Experience = () => {
   return (
-    <div id="experience" className="bg-slate-900">
-      <div className="container mx-auto max-w-screen-lg min-h-fit pt-28">
+    <div id="experience" className="">
+      <div className="container mx-auto max-w-screen-lg min-h-full pt-28">
         
         <div className="section-header">
-          <span className="section-title">/ experience</span>
+          <span className="section-title">Experience</span>
         </div>
-
-        <div>
-          <TabGroup vertical>
+        
+          <TabGroup vertical className='flex flex-col md:flex-row'>
             <TabList className="float-left h-full">
               {categories.map(({ name }) => (
                 <Tab
                   key={name}
-                  className="tab-highlight py-3 px-3 text-slate-300 block text-left outline-none uppercase">
+                  className="tab-highlight py-3 px-3 text-slate-300 block text-left outline-none uppercase text-nowrap">
                   {name}
                 </Tab>
               ))}
             </TabList>
-            <TabPanels className="w-auto ml-52 h-full text-slate-400 pl-12">
+            <TabPanels className="w-auto h-full text-slate-400 pl-12">
               {categories.map(({ name, jobtitle, duration, posts }) => (
                 <TabPanel key={name}>
                   <p className="text-2xl font-bold text-slate-300">{jobtitle} <span className="exp-highlight">@ {name}</span></p>
@@ -121,7 +135,6 @@ const Experience = () => {
               ))}
             </TabPanels>
           </TabGroup>
-        </div>
 
       </div>
     </div>
