@@ -10,7 +10,7 @@ const callouts = [
       hash1: 'react',
       hash2: 'vite',
       hash3: 'CSS',
-      image: '/src/assets/images/01.jpg',
+      image: '/assets/images/01.jpg',
     },
     {
       name: 'Get Book',
@@ -20,7 +20,7 @@ const callouts = [
       hash1: 'laravel',
       hash2: 'heroku',
       hash3: 'PHP',
-      image: '/src/assets/images/02.jpg',
+      image: '/assets/images/02.jpg',
     },
     {
       name: 'The Collab',
@@ -30,7 +30,7 @@ const callouts = [
       hash1: 'react',
       hash2: 'node',
       hash3: 'mongoDB',
-      image: '/src/assets/images/03.jpg',
+      image: '/assets/images/03.jpg',
     },
     {
       name: 'proj4',
@@ -40,7 +40,7 @@ const callouts = [
       hash1: 'react',
       hash2: 'vite',
       hash3: 'CSS',
-      image: '/src/assets/images/04.jpg',
+      image: '/assets/images/04.jpg',
     },
     {
       name: 'proj5',
@@ -50,7 +50,7 @@ const callouts = [
       hash1: 'laravel',
       hash2: 'heroku',
       hash3: 'PHP',
-      image: '/src/assets/images/05.jpg',
+      image: '/assets/images/05.jpg',
     },
     {
       name: 'proj6',
@@ -60,7 +60,7 @@ const callouts = [
       hash1: 'react',
       hash2: 'node',
       hash3: 'mongoDB',
-      image: '/src/assets/images/06.jpg',
+      image: '/assets/images/06.jpg',
     },
   ]
 

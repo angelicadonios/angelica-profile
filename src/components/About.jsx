@@ -1,5 +1,5 @@
 import React from 'react'
-import angel from "../assets/images/angel02.jpg";
+import angel from "/assets/images/angel02.jpg";
 
 const items = [
   "HTML5",

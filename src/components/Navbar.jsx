@@ -1,7 +1,7 @@
 import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, EnvelopeIcon, AtSymbolIcon, CodeBracketIcon, PencilSquareIcon } from '@heroicons/react/24/outline'
-import logo from "../assets/images/logo.png";
+import logo from "/assets/images/logo.png";
 
 const navigation = [
   { name: 'Home', href: '#home', current: false },
