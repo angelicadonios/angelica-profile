@@ -10,7 +10,30 @@ const callouts = [
       hash1: 'react',
       hash2: 'vite',
       hash3: 'CSS',
+      tags: ['React', 'CSS'],
       image: '/assets/images/01.jpg',
+    },
+    {
+      name: 'ComfortPro',
+      description: "Product catalog for ChefSole, slip-resistant kitchen footwear. Built with React and Tailwind CSS.",
+      href1: 'https://comfortpro.vercel.app/',
+      href2: 'https://github.com/angelicadonios',
+      hash1: 'react',
+      hash2: 'tailwincss',
+      hash3: 'vercel',
+      tags: ['React', 'TailwindCSS'],
+      image: '/assets/images/06.jpg',
+    },
+    {
+      name: 'FEELDX',
+      description: 'Freelance landing page for a construction visualisation and consulting firm. Features services, testimonials, and a multi-column footer.',
+      href1: 'https://feeldx-angelica-donios.vercel.app/',
+      href2: 'https://github.com/angelicadonios',
+      hash1: 'laravel',
+      hash2: 'heroku',
+      hash3: 'PHP',
+      tags: ['React', 'TailwindCSS'],
+      image: '/assets/images/05.jpg',
     },
     {
       name: 'Get Book',
@@ -20,6 +43,7 @@ const callouts = [
       hash1: 'laravel',
       hash2: 'heroku',
       hash3: 'PHP',
+      tags: ['React', 'TailwindCSS'],
       image: '/assets/images/02.jpg',
     },
     {
@@ -30,6 +54,7 @@ const callouts = [
       hash1: 'react',
       hash2: 'node',
       hash3: 'mongoDB',
+      tags: ['React', 'TailwindCSS'],
       image: '/assets/images/03.jpg',
     },
     {
@@ -40,27 +65,8 @@ const callouts = [
       hash1: 'react',
       hash2: 'vite',
       hash3: 'CSS',
+      tags: ['React', 'TailwindCSS'],
       image: '/assets/images/04.jpg',
-    },
-    {
-      name: 'proj5',
-      description: 'An e-Commerce website that has books available to order via two payment options.',
-      href1: 'https://github.com/angelicadonios',
-      href2: 'https://github.com/angelicadonios',
-      hash1: 'laravel',
-      hash2: 'heroku',
-      hash3: 'PHP',
-      image: '/assets/images/05.jpg',
-    },
-    {
-      name: 'proj6',
-      description: 'A co-working space inspired website where you can choose a type of room and be able to book it.',
-      href1: 'https://github.com/angelicadonios',
-      href2: 'https://github.com/angelicadonios',
-      hash1: 'react',
-      hash2: 'node',
-      hash3: 'mongoDB',
-      image: '/assets/images/06.jpg',
     },
   ]
 
@@ -71,7 +77,7 @@ const ProjectCards = () => {
           {callouts.map((callout) => (
           <div key={callout.name} className='card'>
             <div className='card-image'>
-              <img className='' src={callout.image} />
+              <a href={callout.href1} target='_blank'><img className='' src={callout.image} /></a>
             </div>
             <div className='card-content justify-between text-stone-50'>
               <h1 className='pl-2'>{callout.name}</h1>
@@ -83,6 +89,16 @@ const ProjectCards = () => {
                   <CodeBracketIcon aria-hidden="true" className="size-5" />
                 </a>
               </span>
+            </div>
+            <div className='text-xs font-light text-stone-400 leading-snug mt-1 pl-2'>
+              <p>{callout.description}</p>
+            </div>
+            <div className='flex gap-2 mt-2 pl-2'>
+              {callout.tags.map(tag => (
+                <span key={tag} className='text-[10px] font-mono text-stone-500 border border-stone-700 px-2 py-0.5 rounded-full'>
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
           ))}

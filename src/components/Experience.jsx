@@ -18,7 +18,7 @@ const categories = [
     ],
   },
   {
-    name: 'TBS',
+    name: 'TBS Global',
     jobtitle: 'Software Developer',
     duration: 'OCT 2021 - JUL 2023',
     posts: [
